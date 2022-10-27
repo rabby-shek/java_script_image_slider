@@ -1,6 +1,6 @@
 var slides = document.querySelectorAll(".slide");
 var dots = document.querySelectorAll(".dot");
-var index = 0;
+let index = 0;
 
 
 function prevSlide(n){
@@ -19,7 +19,7 @@ function Dot(n){
     
 }
 
-changeSlide();
+
 
 function changeSlide(){
     
@@ -42,8 +42,12 @@ function changeSlide(){
     slides[index].style.display = "block";
     dots[index].classList.add("active");
 
-  
+    index++;
+    setTimeout(changeSlide,5000);
+   
 
 }
+changeSlide();
+
 
 

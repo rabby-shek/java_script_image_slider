@@ -6,22 +6,22 @@ body{
     margin:0 auto;
     position:relative;
     overflow:hidden;
-    box-shadow:2px 5px 10px rgba(0,0,0,0.4);;
+    box-shadow:2px 5px 10px rgba(0,0,0,0.4);
   }
   
   .slide{
     width:100%;
     display:none;
-    animation-name:fade;
-    animation-duration:1s;
+    transition: 3s;
+   
     
   }
   img{
-   width:100%; 
+   width:100%;
   }
   @keyframes fade{
-    from{opacity:0.5;}
-    to{opacity:1;}
+    
+    
   }
   
   .controls{
@@ -30,12 +30,14 @@ body{
     transform:translateY(-50%);
     font-size:1.5em;
     padding:15px 10px;
-    border-radius:5px;
+    border-radius:50%;
+    cursor: pointer;
     
   }
   
   .controls:hover{
-    background:white;
+    background:black;
+    color: white;
     transition:0.3s;
   }
   
@@ -61,6 +63,7 @@ body{
     padding:8px;
     border-radius:50%;
     margin:10px 5px;
+    cursor: pointer;
   }
   
   .active{
@@ -77,6 +80,6 @@ body{
     }
     
     #dots-con{
-      display:none;
+        text-align:center;
     }
   }
